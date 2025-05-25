@@ -1,0 +1,37 @@
+# Go build output
+main
+*.exe
+*.out
+*.test
+
+# Dependency directories (if used)
+vendor/
+
+# IDE/editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# OS-specific
+ehthumbs.db
+Icon?
+Desktop.ini
+
+temp/
+
+# Git
+.git/
+
+# Exclude template caches (if used)
+*.tmpl.cache
+
+# Don't ignore static assets
+!img/
+!static/
+!templates/
