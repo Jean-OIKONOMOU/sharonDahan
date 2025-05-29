@@ -35,9 +35,12 @@
     }
 
     .bio_text {
-        color: var(--text-title);
+        color: var(--text-primary);
         margin: 0;
         padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        min-width: 100vw;
         font-size: 1rem !important;
     }
 
