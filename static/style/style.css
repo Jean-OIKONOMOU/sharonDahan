@@ -105,7 +105,6 @@ main {
     overflow-x: hidden;
     flex-grow: 1;
     /* Take remaining space */
-    overflow: auto;
     /* Optional: scroll if needed */
 }
 
