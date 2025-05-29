@@ -33,9 +33,9 @@ func router(w http.ResponseWriter, r *http.Request) {
 		http.ServeFile(w, r, "./static/service-worker.js")
 	case "/about":
 		serveHTML(w, r, "./static/about.html")
-	case "/contact":
-		serveHTML(w, r, "./static/contact.html")
-	case "/photogallery":
+	case "/moviegallery":
+		serveHTML(w, r, "./static/videoGallery.html")
+	case "/":
 		// serveHTML(w, r, "./static/photoGallery.html")
 
 		imagesDir := "img/B&W_1/"
@@ -52,16 +52,11 @@ func router(w http.ResponseWriter, r *http.Request) {
 			}
 		}
 
-		tmpl := template.Must(template.ParseFiles("static/photoGallery.html"))
+		tmpl := template.Must(template.ParseFiles("static/index.html"))
 		err = tmpl.Execute(w, images)
 		if err != nil {
 			http.Error(w, "Template error", http.StatusInternalServerError)
 		}
-
-	case "/moviegallery":
-		serveHTML(w, r, "./static/videoGallery.html")
-	case "/":
-		serveHTML(w, r, "./static/index.html")
 	default:
 		http.NotFound(w, r)
 	}
