@@ -22,12 +22,20 @@ func main() {
 	// Page routes
 	http.HandleFunc("/", logRequest(router))
 
+	http.HandleFunc("/service-worker.js", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Content-Type", "application/javascript")
+		http.ServeFile(w, r, "./static/service-worker.js")
+	})
+
 	log.Println("Server running at http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func router(w http.ResponseWriter, r *http.Request) {
 	switch r.URL.Path {
+	case "/service-worker.js":
+		w.Header().Set("Content-Type", "application/javascript")
+		http.ServeFile(w, r, "./static/service-worker.js")
 	case "/about":
 		serveHTML(w, r, "./static/about.html")
 	case "/contact":
