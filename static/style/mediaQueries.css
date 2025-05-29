@@ -29,19 +29,6 @@
         margin: 0;
     }
 
-    .bg {
-        position: fixed;
-        top: 0;
-        left: -50vw;
-
-        /* Preserve aspet ratio */
-        min-width: 200vw;
-        max-width: 200vw;
-        min-height: 100vh;
-        max-height: calc(100vh - 10rem);
-        z-index: -1;
-    }
-
     .bio {
         display: flex;
         flex-direction: column;
@@ -50,7 +37,7 @@
     .bio_text {
         color: var(--text-title);
         margin: 0;
-        padding: 0;
+        padding: 0 2rem; 
         font-size: 1rem !important;
     }
 

@@ -73,18 +73,6 @@
 }
 
 /********* BODY, MAIN, HEADER, FOOTER *********/
-
-body {
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 85vh;
-}
-
 body::-webkit-scrollbar {
     width: 0.25rem;
 }
@@ -280,7 +268,10 @@ nav {
 .bio_text {
     color: var(--text-title);
     margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    padding: 0 3rem 3rem 3rem;    
 }
 
 .bio_text p {
