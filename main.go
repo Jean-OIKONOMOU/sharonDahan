@@ -22,11 +22,6 @@ func main() {
 	// Page routes
 	http.HandleFunc("/", logRequest(router))
 
-	http.HandleFunc("/service-worker.js", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/javascript")
-		http.ServeFile(w, r, "./static/service-worker.js")
-	})
-
 	log.Println("Server running at http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

@@ -5,9 +5,9 @@
     "orientation": "portrait-primary",
     "categories": ["Photography","Movies","Director"],
     "description" : "Website of Sharon Alice",
-    "display": "minimal-ui",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
+    "display": "standalone",
+    "background_color": "#62A87C",
+    "theme_color": "#313B72",
     "icons": [
         {
             "src": "/icons/icon-192.png",
