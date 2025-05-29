@@ -70,14 +70,25 @@
 
     .sidebar .nav-links {
         display: flex;
-        flex-direction: column;       
+        flex-direction: column;
         min-height: 50vh;
-        justify-content: space-around;         
+        justify-content: space-around;
     }
 
 
     .nav-links {
         display: none;
+    }
+
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
     }
 }
 
@@ -90,18 +101,29 @@
     .sidebar {
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     .sidebar .nav-links {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
         min-height: 50vh;
-        justify-content: space-around;        
+        justify-content: space-around;
     }
 
     .nav-links {
         display: none;
+    }
+
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
     }
 }
 
@@ -114,18 +136,29 @@
     .sidebar {
         display: flex;
         justify-content: center;
-        align-items: center;        
+        align-items: center;
     }
 
     .sidebar .nav-links {
         display: flex;
         flex-direction: column;
         min-height: 50vh;
-        justify-content: space-around;        
+        justify-content: space-around;
     }
 
     .nav-links {
         display: none;
+    }
+
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 85vh;
     }
 }
 
@@ -150,6 +183,17 @@
     .title {
         font-size: 5rem !important;
     }
+
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -173,5 +217,16 @@
 
     .title {
         font-size: 5rem !important;
+    }
+
+    body {
+        color: black;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
     }
 }
