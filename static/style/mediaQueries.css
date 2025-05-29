@@ -37,7 +37,7 @@
     .bio_text {
         color: var(--text-title);
         margin: 0;
-        padding: 0 2rem; 
+        padding: 0 2rem;
         font-size: 1rem !important;
     }
 
@@ -62,6 +62,9 @@
         justify-content: space-around;
     }
 
+    .sidebar .nav-links a {
+        padding-left: 0;
+    }
 
     .nav-links {
         display: none;
@@ -98,6 +101,10 @@
         justify-content: space-around;
     }
 
+    .sidebar .nav-links a {
+        padding-left: 0;
+    }
+
     .nav-links {
         display: none;
     }
@@ -131,6 +138,10 @@
         flex-direction: column;
         min-height: 50vh;
         justify-content: space-around;
+    }
+
+    .sidebar .nav-links a {
+        padding-left: 0;
     }
 
     .nav-links {
