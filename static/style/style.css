@@ -145,6 +145,14 @@ main {
     fill: var(--hover-navlink);
 }
 
+.nav-link:hover ~ #house {
+    fill: var(--hover-navlink) !important;
+}
+
+.nav-link:hover + #house {
+    fill: var(--hover-navlink) !important;
+}
+
 .link-text {
     display: none;
     margin-left: 1rem;
