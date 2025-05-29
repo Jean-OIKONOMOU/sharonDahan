@@ -125,7 +125,6 @@ nav {
     justify-content: space-between;
     margin: 0 3rem 3rem 3rem;
     flex-shrink: 0;
-    /* Prevent it from shrinking */
 }
 
 .nav-link_active {
@@ -214,37 +213,11 @@ nav {
     background-color: white;
     min-width: 100vw;
     min-height: 100vh;
-    /* color: var(--background); 
-    padding: 0.5rem 1rem;
-    padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem); */
 }
 
 .hamburger-menu:has(input:checked)+.sidebar {
     translate: 0;
 }
-
-/* .nav-link {
-        display: flex;
-        align-items: center;
-        height: 5rem;
-        width: 100%;
-        text-decoration: none;
-        filter: grayscale(100%) opacity(0.9);
-        transition: var(--transition-speed);
-        color: var(--text-navlink);
-    }
-
-    .nav-link:hover {
-        filter: grayscale(0%) opacity(1);
-        background: var(--bg-secondary);
-        color: var(--text-navlink-hover);
-    }
-
-    .link-text {
-        display: none;
-        margin-left: 1rem;
-        flex: 2;
-    } */
 
 .bio {
     display: flex;
@@ -266,7 +239,7 @@ nav {
 }
 
 .bio_text {
-    color: var(--text-title);
+    color: var(--text-primary);
     margin: 0;
     display: flex;
     flex-direction: column;
