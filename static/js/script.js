@@ -1,3 +1,13 @@
-if (screen.orientation && screen.orientation.lock) {
-    screen.orientation.lock("portrait").catch(err => console.warn("Orientation lock failed:", err));
-}
+window.addEventListener("load", () => {
+    if (screen.orientation && screen.orientation.lock) {
+        screen.orientation.lock("portrait");
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', () => {
+        if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('portrait');
+        }
+    }, { once: true });
+});
