@@ -29,6 +29,10 @@
   display: none;
 }
 
+#lightbox::after {
+  content: "\d7";
+}
+
 #lightbox.active {
   display: flex;
   justify-content: center;
@@ -36,5 +40,5 @@
 }
 
 #lightbox img {
-  height: 80vh;
+  max-height: 70vh;
 }
