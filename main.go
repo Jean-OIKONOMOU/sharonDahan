@@ -16,6 +16,7 @@ func main() {
 	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("./static/js"))))
 	http.Handle("/style/", http.StripPrefix("/style/", http.FileServer(http.Dir("./static/style"))))
 	http.Handle("/other/", http.StripPrefix("/other/", http.FileServer(http.Dir("./static/other"))))
+	http.Handle("/pwa/", http.StripPrefix("/pwa/", http.FileServer(http.Dir("./static/pwa"))))
 	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir("img"))))
 
 	// Page routes
