@@ -16,6 +16,11 @@
         aspect-ratio: 2 / 1;
     }
 
+    .galleryContainer > h1 {
+        font-size: 2rem !important;
+        
+    }
+
     nav {
         margin: 0 0 3rem 0;
     }

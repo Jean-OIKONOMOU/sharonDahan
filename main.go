@@ -38,7 +38,7 @@ func router(w http.ResponseWriter, r *http.Request) {
 	case "/":
 		// serveHTML(w, r, "./static/photoGallery.html")
 
-		imagesDir := "img/B&W_1/"
+		imagesDir := "img/pictures/"
 		files, err := os.ReadDir(imagesDir)
 		if err != nil {
 			http.Error(w, "Unable to read images", http.StatusInternalServerError)
@@ -57,6 +57,7 @@ func router(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			http.Error(w, "Template error", http.StatusInternalServerError)
 		}
+
 	default:
 		http.NotFound(w, r)
 	}

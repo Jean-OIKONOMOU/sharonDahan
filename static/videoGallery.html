@@ -8,18 +8,20 @@
 
   <meta property="og:title" content="Sharon Alice | Photographer & Filmmaker" />
   <meta property="og:description" content="Explore my visual world of photography and filmmaking." />
-  <meta property="og:image" content="https://sharonalice.be/img/B&W_1/O.jpg" />
+  <meta property="og:image" content="https://sharonalice.be/img/pictures/O.jpg" />
   <meta property="og:url" content="https://sharonalice.be/" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sharon Alice | Photographer & Filmmaker" />
   <meta name="twitter:description" content="Explore my visual world of photography and filmmaking." />
-  <meta name="twitter:image" content="https://sharonalice.be/img/B&W_1/O.jpg" />
+  <meta name="twitter:image" content="https://sharonalice.be/img/pictures/O.jpg" />
 
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/photoGallery.css">
   <link rel="stylesheet" href="style/reset.css">
-  <link rel="stylesheet" href="style/mediaQueries.css">  
+  <link rel="stylesheet" href="style/mediaQueries.css">
+  <script defer src="js/photoGallery.js"></script>  
   <script defer src="service-worker.js"></script>
   <script defer src="js/script.js"></script>    
 
@@ -46,7 +48,7 @@
 <body>
   <nav>
     <header>
-      <p class="space-grotesk-default title ">Sharon Alice</p>
+      <p class="space-grotesk-default title">Sharon Alice</p>
       <p class="open-sans-figcaption under-title ">Photographer & Filmmaker</p>
     </header>
     <div class="nav-links">
@@ -66,9 +68,43 @@
     </aside>
   </nav>
   <main>
-    <div class="bio_text open-sans-default under-title">
-      <p>Under Construction.</p>
+    
+    <div class="galleryContainer">
+      <h1 class="space-grotesk-default title">Arrêter Les Vagues</h1>
+      <div class="gallery">
+        <img src="../img/movies/arreter_les_vagues_1.jpg" alt="Gallery Image" loading="lazy">
+        <img src="../img/movies/arreter_les_vagues_2.jpg" alt="Gallery Image" loading="lazy">
+        <img src="../img/movies/arreter_les_vagues_3.jpg" alt="Gallery Image" loading="lazy">
+        <img src="../img/movies/arreter_les_vagues_4.jpg" alt="Gallery Image" loading="lazy">
+      </div>
     </div>
+
+    <div class="galleryContainer">
+      <h1 class="space-grotesk-default title">Les Coquelicots (shortfilm)</h1>
+      <div class="gallery">
+        <img src="../img/movies/les_coquelicots.jpg" alt="Gallery Image" loading="lazy">
+        <img src="../img/movies/les_coquelicots_shortfilm_1.jpg" alt="Gallery Image" loading="lazy">
+        <img src="../img/movies/les_coquelicots_shortfilm_2.jpg" alt="Gallery Image" loading="lazy">
+      </div>
+    </div>
+    
+    <div class="galleryContainer">
+      <h1 class="space-grotesk-default title">NO NAME (48h short film project)</h1>
+      <div class="gallery">
+        <img src="../img/movies/NO_NAME_48H_short_film_project.jpg" alt="Gallery Image" loading="lazy">
+      </div>
+    </div>
+
+    <div class="galleryContainer">
+      <h1 class="space-grotesk-default title">Be My Baby (shortfilm)</h1>
+      <div class="gallery">
+        <img src="../img/movies/be_my_baby_shortfilm.jpg" alt="Gallery Image" loading="lazy">
+      </div>
+    </div>
+        
+    <!-- <div class="bio_text open-sans-default under-title">
+      <p>Under Construction.</p>
+    </div> -->
     <footer>
       <a href="mailto:sharonalice.film@gmail.com" class="space-grotesk-default">sharonalice.film@gmail.com</a>
     </footer>
